@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Técnica Pomodoro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input, button {
+            margin: 5px 0;
+            padding: 10px;
+            width: 200px;
+        }
+        #timer {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Técnica Pomodoro</h1>
+
+    <div>
+        <h2>Adicionar Tarefa</h2>
+        <input type="text" id="tarefaNome" placeholder="Nome da Tarefa">
+        <input type="text" id="tarefaDescricao" placeholder="Descrição">
+        <button id="adicionarTarefa">Adicionar Tarefa</button>
+    </div>
+
+    <div>
+        <h2>Timer Pomodoro</h2>
+        <div id="timer">00:00</div>
+        <button id="iniciarTimer">Iniciar Pomodoro</button>
+        <button id="pausarTimer">Pausar</button>
+        <button id="continuarTimer">Continuar</button>
+    </div>
+
+    <h2>Tarefas</h2>
+    <ul id="listaTarefas"></ul>
+</body>
+</html>
